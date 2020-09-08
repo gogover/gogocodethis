@@ -1,4 +1,3 @@
-// version: I'm nearly finished the codelab woo!
 self.addEventListener('fetch', function(event) {
 	  if (event.request.url == 'https://dragon-server.appspot.com/') {
     console.info('responding to dragon-server fetch with Service Worker! 🤓');
