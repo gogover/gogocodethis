@@ -16,10 +16,7 @@ addEventListener('fetch', function(event) {
         } else {
           return fetch(event.request)     //fetch from internet            
             .catch(function(err) {       // fallback mechanism
-              return caches.open(CACHE_CONTAINING_ERROR_MESSAGES)
-                .then(function(cache) {
-                  return cache.match('/offline.html');
-                });
+              alert('Yo');
             });
         }
       })
